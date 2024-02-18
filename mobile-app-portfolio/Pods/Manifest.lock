@@ -1,0 +1,39 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - SwiftAlgorithms (1.0.0)
+  - Swinject (2.8.3)
+  - SwinjectAutoregistration (2.8.3):
+    - Swinject (~> 2.8.3)
+  - Verge (8.19.0):
+    - Verge/Store (= 8.19.0)
+  - Verge/ObjcBridge (8.19.0)
+  - Verge/Store (8.19.0):
+    - Verge/ObjcBridge
+
+DEPENDENCIES:
+  - Charts
+  - Swinject
+  - SwinjectAutoregistration
+  - Verge
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - SwiftAlgorithms
+    - Swinject
+    - SwinjectAutoregistration
+    - Verge
+
+SPEC CHECKSUMS:
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+  SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
+  Verge: 5199d7de11162b5568697dabdfab4f83d99d6436
+
+PODFILE CHECKSUM: c68e9458bc0c28b56565bca7a23159e5fa8c6bad
+
+COCOAPODS: 1.11.3

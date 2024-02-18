@@ -1,0 +1,37 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+workspace 'mobile-app-portfolio'
+
+def shared_pod
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for mobile-app-portfolio
+  pod 'Swinject'
+  pod 'SwinjectAutoregistration'
+  pod 'Verge'
+  pod 'Charts'
+end
+
+
+target 'mobile-app-portfolio' do
+  shared_pod
+
+  target 'mobile-app-portfolioTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'mobile-app-portfolioUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'core' do
+  project '../core/core'
+
+end
