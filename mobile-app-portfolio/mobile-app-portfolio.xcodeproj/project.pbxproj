@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		08F20A100A07F0085E0BED84 /* Pods_mobile_app_portfolioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734769453AF4F6257037B4B /* Pods_mobile_app_portfolioTests.framework */; };
+		4A04293B2B82FB660068FA3A /* TransactionHistoryInteractor_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04293A2B82FB660068FA3A /* TransactionHistoryInteractor_Test.swift */; };
+		4A04293D2B8300420068FA3A /* LineChartData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A04293C2B8300420068FA3A /* LineChartData.json */; };
 		4A352F812B81E1DE0049EFAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A352F802B81E1DE0049EFAF /* AppDelegate.swift */; };
 		4A352F8B2B81E1DE0049EFAF /* mobile_app_portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A352F892B81E1DE0049EFAF /* mobile_app_portfolio.xcdatamodeld */; };
 		4A352F8D2B81E1E10049EFAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A352F8C2B81E1E10049EFAF /* Assets.xcassets */; };
@@ -90,6 +92,8 @@
 /* Begin PBXFileReference section */
 		0DA0D72D510124A896ECF35C /* Pods-mobile-app-portfolioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-app-portfolioUITests.debug.xcconfig"; path = "Target Support Files/Pods-mobile-app-portfolioUITests/Pods-mobile-app-portfolioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F2FBEFE89AC8E387C1A79B2 /* Pods-mobile-app-portfolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-app-portfolio.debug.xcconfig"; path = "Target Support Files/Pods-mobile-app-portfolio/Pods-mobile-app-portfolio.debug.xcconfig"; sourceTree = "<group>"; };
+		4A04293A2B82FB660068FA3A /* TransactionHistoryInteractor_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionHistoryInteractor_Test.swift; path = ../../../../../../../Downloads/TransactionHistoryInteractor_Test.swift; sourceTree = "<group>"; };
+		4A04293C2B8300420068FA3A /* LineChartData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LineChartData.json; sourceTree = "<group>"; };
 		4A352F7D2B81E1DE0049EFAF /* mobile-app-portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-app-portfolio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A352F802B81E1DE0049EFAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A352F8A2B81E1DE0049EFAF /* mobile_app_portfolio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobile_app_portfolio.xcdatamodel; sourceTree = "<group>"; };
@@ -177,6 +181,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0429392B82FB3C0068FA3A /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				4A04293A2B82FB660068FA3A /* TransactionHistoryInteractor_Test.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 		4A352F742B81E1DE0049EFAF = {
 			isa = PBXGroup;
 			children = (
@@ -482,6 +494,7 @@
 		4A3530432B8254540049EFAF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				4A0429392B82FB3C0068FA3A /* Transaction */,
 				4A3530442B8254690049EFAF /* Home */,
 			);
 			path = Modules;
@@ -498,6 +511,7 @@
 		4A3530472B8254DF0049EFAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A04293C2B8300420068FA3A /* LineChartData.json */,
 				4A3530482B82551C0049EFAF /* DonutChartData.json */,
 			);
 			path = Resources;
@@ -662,6 +676,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A04293D2B8300420068FA3A /* LineChartData.json in Resources */,
 				4A3530492B82551C0049EFAF /* DonutChartData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +815,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A04293B2B82FB660068FA3A /* TransactionHistoryInteractor_Test.swift in Sources */,
 				4A35304C2B8255680049EFAF /* FileReader.swift in Sources */,
 				4A352F9B2B81E1E20049EFAF /* mobile_app_portfolioTests.swift in Sources */,
 				4A3530462B8254920049EFAF /* HomeInteractor_Test.swift in Sources */,

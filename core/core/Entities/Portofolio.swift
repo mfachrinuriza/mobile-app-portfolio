@@ -46,6 +46,12 @@ public struct DonutChart: Codable {
     public var data: [Transaction]
 }
 
+extension DonutChart: Equatable {
+    public static func == (lhs: DonutChart, rhs: DonutChart) -> Bool {
+        return lhs.label == rhs.label && lhs.data.count == rhs.data.count
+    }
+}
+
 public struct Transaction: Codable {
     public var trx_date: String
     public var nominal: Int
@@ -55,3 +61,8 @@ public struct LineChart: Codable {
     public var month: [Double]
 }
 
+extension LineChart: Equatable {
+    public static func == (lhs: LineChart, rhs: LineChart) -> Bool {
+        return lhs.month == rhs.month
+    }
+}

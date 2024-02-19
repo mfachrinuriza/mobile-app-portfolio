@@ -28,7 +28,7 @@ final class HomeInteractor_Test: XCTestCase {
         container.removeAll()
     }
     
-    func test_getAmount_success() {
+    func test_getDonutChart_success() {
         let sut = container ~> HomeInteractorProtocol.self
         let sutDonutData = sut.getDonutChart()
         
@@ -41,5 +41,4 @@ final class HomeInteractor_Test: XCTestCase {
         // Compare the retrieved data
         XCTAssertEqual(sutDonutData, rscDonutData)
     }
-
 }
